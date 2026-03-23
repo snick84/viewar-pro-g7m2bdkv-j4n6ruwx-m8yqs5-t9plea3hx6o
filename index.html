@@ -896,7 +896,7 @@ document.getElementById('copy-iframe-url-button').addEventListener('click', func
 
     
       var pathFromDropbox = modelURL.split('https://dl.dropboxusercontent.com/')[1];
-      var uniqueURL = 'https://www.placeme.gr/viewar-pro-url?m=' + encodeURIComponent(pathFromDropbox) + '&r=' + autoRotate + '&b=' + encodeURIComponent(selectedBackgroundKey) + '&co=' + encodeURIComponent(cameraOrbit) + '&e=' + encodeURIComponent(exposureValue) + '&cl=' + encodeURIComponent(selectedColor) + '&ar=' + encodeURIComponent(arPlacement);
+      var uniqueURL = 'https://viewar-pro-url.vercel.app?m=' + encodeURIComponent(pathFromDropbox) + '&r=' + autoRotate + '&b=' + encodeURIComponent(selectedBackgroundKey) + '&co=' + encodeURIComponent(cameraOrbit) + '&e=' + encodeURIComponent(exposureValue) + '&cl=' + encodeURIComponent(selectedColor) + '&ar=' + encodeURIComponent(arPlacement);
       
         // Append the USDZ parameter if available
   if (typeof selectedUSDZURL !== 'undefined' && selectedUSDZURL) {
@@ -1253,7 +1253,7 @@ async function handleUpload(accessToken) {
           .replace('www.dropbox.com', 'dl.dropboxusercontent.com')
           .replace('?dl=0', '?dl=1');
         var pathFromDropbox = modelURL.split('https://dl.dropboxusercontent.com/')[1];
-        var uniqueURL = 'https://www.placeme.gr/viewar-pro-url?m=' + encodeURIComponent(pathFromDropbox) +
+        var uniqueURL = 'https://viewar-pro-url.vercel.app?m=' + encodeURIComponent(pathFromDropbox) +
             '&r=' + autoRotate +
             '&b=' + encodeURIComponent(selectedBackgroundKey) +
             '&co=' + encodeURIComponent(cameraOrbit) +
